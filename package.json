@@ -1,0 +1,17 @@
+{
+  "name": "lainazy.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "author": "lainazy <lainazy@users.noreply.github.com>",
+  "private": true,
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "deploy": "bash .deploy.sh"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
