@@ -11,4 +11,5 @@ features:
 - title: VuePress
   details: 使用 VuePress 搭建。
 footer: 前端小蜗牛🐌，学的慢，但是不能放弃学习。
+title: 首页
 ---

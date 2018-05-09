@@ -12,6 +12,7 @@ module.exports = {
     '/jottings/': [
       { title: '自主学习', collapsable: false, children: ['learn-by-self'] },
       { title: '浏览器', collapsable: false, children: ['browser-study'] },
+      { title: 'Http', collapsable: false, children: ['http-status-code'] },
       { title: 'Css', collapsable: false, children: ['css-often-used', 'css-study', 'scss'] },
       { title: 'Javascript', collapsable: false, children: ['js-study'] },
       { title: 'Git', collapsable: false, children: ['git-cmd'] },

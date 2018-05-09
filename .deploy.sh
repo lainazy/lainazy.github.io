@@ -13,7 +13,7 @@ cd docs/.vuepress/dist
 echo 'lainazy.cn' > CNAME
 
 git init
-git add -A
+git add --all
 git commit -m 'deploy docs'
 
 # 发布到 https://<USERNAME>.github.io
