@@ -4,7 +4,7 @@ date: 2017-07-24 21:50:17
 tags: css
 ---
 
-#### 规则嵌套
+### 规则嵌套
 
 > 规则嵌套主要用来避免重复写父选择器
 > &符号用来表示父选择器的引用，不写&相当于在子选择器前面添加
@@ -41,7 +41,7 @@ article dl > dd { color: #555 }
 nav + article { margin-top: 0 }
 ```
 
-#### 属性嵌套
+### 属性嵌套
 
 > 属性嵌套主要用来避免重复写根属性
 > 属性嵌套根属性和规则嵌套选择器的书写区别在于属性嵌套根属性后面有个冒号(:)
@@ -77,7 +77,7 @@ nav {
 }
 ```
 
-#### 变量
+### 变量
 
 > $符号用来标识变量
 > 定义的变量用在样式声明的属性值中
@@ -126,7 +126,7 @@ $content: "Non-null content" !default;
 }
 ```
 
-#### 函数
+### 函数
 
 > @function用来自定义一个scss函数
 > @return用来返回函数的返回值
@@ -146,7 +146,7 @@ $gutter-width: 10px;
 }
 ```
 
-#### @import
+### @import
 
 > @import用来导入其它独立的css/scss片段
 > 使用@import时，.sass和.scss文件后缀可以省略
@@ -206,7 +206,7 @@ $gutter-width: 10px;
 @import "example", "colors";
 ```
 
-#### @mixin & @include & @content
+### @mixin & @include & @content
 
 > @mixin主要用来将重用的css代码提取出来
 > @include用来引入这些被@mixin提取出来的css代码
@@ -388,7 +388,7 @@ $color: white;
 }
 ```
 
-#### @extend
+### @extend
 
 > @extend生成的代码量比@mixin相对更少
 > @extend的原理：如果.seriousError @extend .error，那么样式表中的任何一处.error选择器都用[.error, .seriousError]这一选择器组进行替换
@@ -575,11 +575,11 @@ $color: white;
 }
 ```
 
-#### 运算
+### 运算
 
 > 具体运算规则参考：[SASS中文文档 - 运算](http://sass.bootcss.com/docs/sass-reference/#yun-suan)
 
-#### 插入符
+### 插入符
 
 > \#{}用来将变量值插入到指定位置
 
@@ -595,7 +595,7 @@ p.foo {
 }
 ```
 
-#### 控制指令
+### 控制指令
 
 > @if & @else if & @else
 
@@ -697,7 +697,7 @@ $i: 6;
 }
 ```
 
-#### 媒体查询
+### 媒体查询
 
 ```scss
 .sidebar {
@@ -733,7 +733,7 @@ $i: 6;
 }
 ```
 
-#### 注释
+### 注释
 
 > css的标准注释：/* ... */
 > scss的静默注释：// ... ，注释内容不会出现在生成的css文件中
@@ -745,7 +745,7 @@ body {
 }
 ```
 
-#### 相关链接
+### 相关链接
 
 > [SASS中文文档](http://sass.bootcss.com/docs/sass-reference/)
 > [SASS基础教程](http://www.sasschina.com/guide/)

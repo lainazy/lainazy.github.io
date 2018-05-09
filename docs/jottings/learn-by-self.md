@@ -4,7 +4,7 @@ date: 2017-09-11 18:34:44
 tags: 其他
 ---
 
-#### Mac 开发环境搭建
+### Mac 开发环境搭建
 
 - `homebrew安装` -- 执行 `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 - `node安装` -- 通过nvm安装，nvm使用homebrew安装
@@ -19,7 +19,7 @@ tags: 其他
 - `webpack安装` -- 执行sudo npm install -g webpack
 - `vue-cli安装` -- 执行sudo npm install -g vue-cli
 
-#### Mac Cordova/Ionic 打 android --release 包
+### Mac Cordova/Ionic 打 android --release 包
 
 - `ionic build android --release` -- 生成android-armv7-release-unsigned.apk文件
 - `keytool -genkey -v -keystore release-key.keystore(数字签名文件名) -alias alias_name(项目别名) -keyalg RSA -keysize 2048 -validity 10000` -- 生成数字签名文件
@@ -32,7 +32,7 @@ tags: 其他
 
 - `jarsigner -verbose -keystore release-key.keystore(数字签名文件名) -signedjar android-armv7-release.apk android-armv7-release-unsigned.apk alias_name(项目别名)` -- 简写CLI
 
-#### 用 JS 获取 url 中参数的方法（正则表达式）
+### 用 JS 获取 url 中参数的方法（正则表达式）
 
 ```javascript
 function getUrlValue(key) {
@@ -42,13 +42,13 @@ function getUrlValue(key) {
 }
 ```
 
-#### 用 JS 获取 url 中【协议://主机名:端口号】 的方法（正则表达式）
+### 用 JS 获取 url 中【协议://主机名:端口号】 的方法（正则表达式）
 
 ```javascript
 url.replace(url.replace(/\w+:\/\/\w+(\.\w+)+(:\d+)*/, ''), '');
 ```
 
-#### 微信页面头标题更新 （iframe添加 onload监听事件的方式）
+### 微信页面头标题更新 （iframe添加 onload监听事件的方式）
 
 ```javascript
 function updateWxTitle(title) {
@@ -67,7 +67,7 @@ function updateWxTitle(title) {
 }
 ```
 
-#### 生成随机字符串（可设置字符串长度范围或固定长度）
+### 生成随机字符串（可设置字符串长度范围或固定长度）
 
 ```javascript
 function generateString(randomLengthFlag, minLength, maxLength) {
@@ -85,7 +85,7 @@ function generateString(randomLengthFlag, minLength, maxLength) {
 }
 ```
 
-#### JS 将数字转换成大写金额
+### JS 将数字转换成大写金额
 
 ```javascript
 var digitUppercase =function(n){
@@ -123,7 +123,7 @@ console.log(digitUppercase(7682)); //柒仟陆佰捌拾贰元整
 console.log(digitUppercase(951434677682.00)); //玖仟伍佰壹拾肆亿叁仟肆佰陆拾柒万柒仟陆佰捌拾贰元整
 ```
 
-#### 校验价格输入的正则表达式（vue）
+### 校验价格输入的正则表达式（vue）
 
 ```html
 <input type="tel" placeholder="¥" :value="price" @input="input($event.target, price)">
@@ -137,19 +137,19 @@ input(element, price) {
 }
 ```
 
-#### 单行评级组件
+### 单行评级组件
 
 ```javascript
 "★★★★★☆☆☆☆☆".slice(5 - rate, 10 - rate);
 ```
 
-#### 数字金额化
+### 数字金额化
 
 ```javascript
 var format = test.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 ```
 
-#### 防抖函数
+### 防抖函数
 
 ```javascript
 function debounce(fn, delay, context) {

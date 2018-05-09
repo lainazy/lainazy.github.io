@@ -4,7 +4,7 @@ date: 2017-07-27 17:22:29
 tags: css
 ---
 
-#### 单侧边框线（0.5px）
+### 单侧边框线（0.5px）
 
 ```scss
 .border-top-line {
