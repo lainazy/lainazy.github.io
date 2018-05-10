@@ -23,6 +23,7 @@ module.exports = {
 
   // markdown: {
   //   anchor: { permalink: true, permalinkBefore: true, permalinkSymbol: '#' }, // markdown-it-anchor 插件的选项
+  //   externalLinks: { target: '_blank', rel: 'noopener noreferrer' }, // 这个键值对将会作为特性被增加到是外部链接的 <a> 标签上，默认的选项将会在新窗口中打开一个该外部链接
   //   toc: { includeLevel: [2, 3] }, // markdown-it-table-of-contents 插件的选项
   //   config: undefined, // 用来对当前的 markdown-it 实例应用额外的插件的函数，举例：config: md => { md.use(require('markdown-it-xxx')) }
   // },
