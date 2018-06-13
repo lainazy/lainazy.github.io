@@ -1,7 +1,7 @@
 ---
-title: Git命令
+title: Git 命令
 date: 2017-09-11 18:09:46
-tags: git
+tags: Git
 ---
 
 ### Git Cmd

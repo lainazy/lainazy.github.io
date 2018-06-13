@@ -1,7 +1,7 @@
 ---
-title: Linux命令学习记录
+title: Linux 命令学习记录
 date: 2017-09-11 17:28:41
-tags: linux
+tags: Linux
 ---
 
 ### 文件管理

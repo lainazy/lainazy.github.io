@@ -1,3 +1,9 @@
+---
+title: Travis CI 使用摘要
+date: 2018-05-22 09:44:50
+tags: CI
+---
+
 # Travis CI 使用摘要
 
 > Travis CI 只支持 Github，不支持其他代码托管服务。

@@ -1,7 +1,7 @@
 ---
-title: CSS常用样式记录
+title: CSS 常用样式记录
 date: 2017-07-27 17:22:29
-tags: css
+tags: CSS
 ---
 
 ### 单侧边框线（0.5px）
