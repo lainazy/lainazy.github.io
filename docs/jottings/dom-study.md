@@ -358,6 +358,8 @@ HTMLElement 对象的属性和方法：
     - Node.textContent 会返回所有元素的内容，包括 `<style>` 和 `<script>` 这种天生隐藏的元素中的内容和样式为 display: none 的元素中的内容。
     - innerText 受显示效果的影响，不会返回 `<style>` 和 `<script>` 这种天生隐藏的元素中的内容和样式为 display: none 的元素中的内容。
     - innerText 受 CSS 样式的影响，所以它会触发重排(reflow)，而 Node.textContent 不会。
+    - innerText 返回文本内容时会根据子元素的特性来判断该子元素中的文本内容是否需要单独重起一行显示，而 Node.textContent 会把所有子元素中的文本内容直接拼接，不换行。
+      - 如 div 中的文本内容会重起一行，span 中的文本内容不会（测试发现即使给 span 加 display: block 也不会重起一行显示）。
 - outerText: 设置或返回节点及其后代节点的文本内容。
   - 返回值时，该属性和 innerText 属性返回结果相同。
   - 设置值时，该属性会将自身元素也删除并替换成指定文本内容。
@@ -426,6 +428,8 @@ Node 对象的属性和方法：
     - textContent 会返回所有元素的内容，包括 `<style>` 和 `<script>` 这种天生隐藏的元素中的内容和样式为 display: none 的元素中的内容。
     - innerText 受显示效果的影响，不会返回 `<style>` 和 `<script>` 这种天生隐藏的元素中的内容和样式为 display: none 的元素中的内容。
     - innerText 受 CSS 样式的影响，所以它会触发重排(reflow)，而 textContent 不会。
+    - innerText 返回文本内容时会根据子元素的特性来判断该子元素中的文本内容是否需要单独重起一行显示，而 textContent 会把所有子元素中的文本内容直接拼接，不换行。
+      - 如 div 中的文本内容会重起一行，span 中的文本内容不会（测试发现即使给 span 加 display: block 也不会重起一行显示）。
 - textContent: 设置或返回节点及其后代节点的文本内容。
   - 关于设置，任何子节点可被删除，并被一个单独的文本节点所替换，所替换的内容是此属性所设置的字符串。
   - 与 Node.innerText 和 Element.innerHTML 的区别，具体查看[Node.textContent - MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/Node/textContent)
